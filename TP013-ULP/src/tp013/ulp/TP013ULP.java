@@ -29,7 +29,9 @@ public class TP013ULP {
             ps.executeUpdate();
             System.out.println("Alumnos ingresados correctamente");
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Error de "+ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al acceder a los datos ");
+            System.out.println("error "+ex.getMessage());
+            ex.printStackTrace();
         }
 
         // Insertar 4 materias -----------------------------------------------------------------------------
@@ -44,7 +46,9 @@ public class TP013ULP {
             ps.executeUpdate();
             System.out.println("Materias ingresadas correctamente");
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Error de "+ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al acceder a los datos ");
+            System.out.println("error "+ex.getMessage());
+            ex.printStackTrace();
         }
 
         // Inscribir a los 3 alumnos en 2 materias cada uno ------------------------------------------------
@@ -60,7 +64,9 @@ public class TP013ULP {
             ps.executeUpdate();
             System.out.println("Alumnos inscriptos correctamente");
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Error de "+ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al acceder a los datos ");
+            System.out.println("error "+ex.getMessage());
+            ex.printStackTrace();
         }
         
         // Listar los datos de los alumnos con calificaciones superiores a 8 ----------------------------------
